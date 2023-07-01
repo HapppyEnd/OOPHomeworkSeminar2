@@ -46,8 +46,7 @@ public class Render {
             }
         }
         String field = (mana) ? "Mana   " : "Health ";
-        System.out.print(field);
-        System.out.print(color + pretty + ANSI_RESET);
-        System.out.println(" " + current + "/" + max);
+        System.out.println(
+            field + color + pretty + ANSI_RESET + (" " + current + "/" + max));
     }
 }
